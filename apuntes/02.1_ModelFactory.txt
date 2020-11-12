@@ -1,0 +1,48 @@
+Model Factory
+
+1) Crear registros de prueba (informacion de prueba de modelos)
+2) Faker -> libreria php para generar datos falsos.
+
+
+Seeders
+
+1) Permiten insertar registros en mi base de datos, pueden ser o no productivos.
+2) Normalmente usan los factories o datos bases de configuracion.
+
+Ejecutar migracion
+php artisan db:seed
+
+bueno despues de configurar los factories en el seeder tener los registros en la bd
+configurar el controlador y el modelo del productivos
+ahora vamos a revisar el test las pruebas con php unit
+
+carpeta test/Feature
+
+ProductControllerTest.php
+
+algo nuevo las rutas de las apis
+
+
+carpeta routes/api.php
+
+
+Route::resource('products', ProductController::class);
+
+definimos las rutas
+
+php artisan routes:list
+
+
+ejecutar pruebas con phpunit
+
+vendor/phpunit/phpunit/phpunit
+
+
+listo casi que no pasan las pruebas..
+
+bueno repasamos faker, model fctoyry, seeders, y creamos un api de un modelo producto
+
+tarea:
+
+llamadao categoria , crear modelo factori seed migracion, todo lo correspondiente
+para tener un end point para tener categorias y listarlas

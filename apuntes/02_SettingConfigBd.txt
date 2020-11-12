@@ -1,0 +1,65 @@
+Configuracion de la base de datos
+
+mmm bueno el profe recomienda usa sqlite
+
+es una biblioteca que implemente un sistema de bases de datos transacionales
+sql auto-contenido, sin servidor ni Configuracion.
+
+Bueno para configurar este motor(SQLlite) en el proyecto
+
+dentro del folder database
+touch database.sqlite
+
+ahora en nuestro archivo .env
+
+modificamos la siguiente variable de entorno
+
+DB_CONNECTION=sqlite
+
+y eliminar la linea del nombre del bd
+ejecutamos las migraciones:
+php artisan migrate
+
+ahora para consultarla desde un editor
+
+
+se instala en visual studio code la extension
+
+https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite
+
+Commands
+
+    SQLite: New Query   Create a new untitled sqlite file.
+
+    SQLite: Run Query   Execute query script in the editor.
+
+    SQLite: Quick Query   Choose a database and execute a query without creating a new document.
+
+    SQLite: Use Database   Bind current sql document to the selected database.
+
+    SQLite: Open Database   Open the selected database in the sqlite explorer.
+
+    SQLite: Close Database   Remove the selected database from the sqlite explorer.
+
+    SQLite: Refresh Databases   Refresh databases open in the sqlite explorer.
+
+    SQLite: Show output   Show the extension's output channel.
+
+
+se encuentra una pestaña SQLITE_EXPLORER
+
+bueno se ven las tablas esto esta guache creo que prefiero mysql
+
+bueno no importa me pase a mysql jajajaja me vale gorro
+aprender sqlite
+
+ejecutando test
+
+vendor/phpunit/phpunit/phpunit
+
+creemos el modelo
+
+php artisan make:model Product --api --all
+
+crear modelo , controlador, migracion, factory, seeder
+
