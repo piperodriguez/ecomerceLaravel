@@ -1,0 +1,28 @@
+Sistema de puntuación para E-commerce
+
+Crearás un sistema que permita puntuar tanto usuarios como compras en un E-commerce. 
+Pondrás en práctica la implementación de model factory y seeders para generar datos; 
+relaciones polimórficas entre tus clases; 
+eventos que se dispararán ante las acciones de tus usuarios, 
+service providers y service containers para aspectos como autenticación
+
+-----------------------
+
+Repaso de Laravel y requisitos del curso
+
+que necesito saber ?
+
+requisitos -> editor texto, php => 7.2.5
+
+Controllers, Routes, Request, Eloquent
+
+
+Instalacion
+
+composer, instalador Laravel
+
+composer create-project laravel/laravel 
+
+php artisan
+
+
