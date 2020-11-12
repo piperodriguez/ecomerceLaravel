@@ -1,0 +1,13 @@
+Despliegue:
+
+1) crear la modelo, migracion, seeder, factory, controller, route files para las categorias.
+
+php artisan make:model Category --api --all --resource
+
+se configuran los archivos modelo, factory, seeder, migration,
+
+php artisan migrate --seed
+
+ahora las pruebas esto es algo nuevo para mi
+
+
